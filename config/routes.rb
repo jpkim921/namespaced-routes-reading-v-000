@@ -4,6 +4,10 @@ Rails.application.routes.draw do
     resources :stats, only: [:index]
   end
 
+  namespace :admin do
+    resources :stats, only: [:index]
+  end
+
 
   resources :authors, only: [:show, :index] do
     resources :posts, only: [:show, :index, :new, :edit]
