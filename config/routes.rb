@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
 
 
-  scope vs namespace
-  scope '/admin', module: 'admin' do
-    resources :stats, only: [:index]
-  end
+  # scope vs namespace
+
+  # scope '/admin', module: 'admin' do
+  #   resources :stats, only: [:index]
+  # end
 
   namespace :admin do
     resources :stats, only: [:index]
